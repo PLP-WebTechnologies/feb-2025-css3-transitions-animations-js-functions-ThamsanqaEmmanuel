@@ -1,0 +1,163 @@
+
+body, html {
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  
+  
+  header.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    animation: slideIn 2s ease-out;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+  }
+
+  .heroian {
+    display: block;
+  }
+  #myForm{
+
+    background: rgba(241, 244, 245, 0.276);
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#myForm h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  #myForm label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+  }
+  #myForm input[type="text"],
+  #myForm input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  #myForm input[type="text"]:focus,
+  #myForm input[type="email"]:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  #myForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }  
+  #myForm button:hover {
+    background-color: #005fa3;
+  }
+    
+.error {
+   color: red;
+   font-size: 0.9em;
+}
+.form-summary {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #eef4ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #0077cc;
+  }
+.hidden {
+   display: none;
+}
+#confirmationMessage {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+
+  /* CSS Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @keyframes fadeInForm {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .content {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero {
+      background-position: top;
+    }
+  }
+  
+
+  @media (max-width: 600px) {
+    #myForm {
+      padding: 20px;
+    }
+  
+    #myForm h2 {
+      font-size: 1.5rem;
+    }
+  }
+
